@@ -1,8 +1,10 @@
 package model;
 
+import service.InMemoryHistoryManager;
+
 import java.util.Objects;
 
-public class Task implements Cloneable{
+public class Task extends InMemoryHistoryManager implements Cloneable{
     private int id;
     private String name;
     protected Status status;

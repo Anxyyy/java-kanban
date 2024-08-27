@@ -58,7 +58,7 @@ public class InMemoryTaskManager implements TaskManager {
     }
 
     @Override
-    public void removeAllEpics() {//удаление всех эпиков
+    public void removeAllEpics() { //удаление всех эпиков
         subTasks.clear();
         epics.clear();
     }
@@ -143,7 +143,7 @@ public class InMemoryTaskManager implements TaskManager {
     @Override
     public void updateEpic(Epic epic) { //обновление эпиков
         Epic saved = epics.get(epic.getId());
-        if(saved == null){
+        if (saved == null) {
             return;
         }
 
@@ -175,7 +175,7 @@ public class InMemoryTaskManager implements TaskManager {
         }
     }
 
-    private void calculateStatus(Epic epic) { // приватный метод рассчета статуса
+    private void calculateStatus(Epic epic) {
             boolean allSubTasksDone = true;
             boolean anySubTaskInProgress = false;
 
