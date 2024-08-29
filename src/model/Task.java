@@ -4,20 +4,20 @@ import service.InMemoryHistoryManager;
 
 import java.util.Objects;
 
-public class Task extends InMemoryHistoryManager implements Cloneable{
+public class Task extends InMemoryHistoryManager implements Cloneable {
     private int id;
     private String name;
     protected Status status;
     private String description;
 
-    public Task(int i, String name1, Status aNew, String description1){
+    public Task(int i, String name1, Status aNew, String description1) {
         this.id = id;
         this.name = name;
         this.status = status;
         this.description = description;
     }
 
-    public Task(String name, Status status, String description){
+    public Task(String name, Status status, String description) {
         this.name = name;
         this.status = status;
         this.description = description;
